@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise 3</title>
+    <link rel="shortcut icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../../style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <h1> Exercise 3. <a href="https://github.com/generation-org/JS/tree/master/JS-03%20-%20Control%20Flow">Source</a>
+    </h1>
+    <p>
+        Finally, build a function that, from a yearDayNumber (int, 0-365) and an hourNumber (int, 0-23), returns true if it is business hours.
+        <br>
+        Challenge: Replace the yearDayNumber and hourNumber parameters with a Date() variable.*/
+    </p>
+
+    <div  class="container">
+        <h2>Answer</h2>
+            <p>function businessHours (dayNumber, hourNumber) {</p>
+            <p> &nbsp;&nbsp; return ((dayNumber != 0) && (dayNumber != 6)) && ((hourNumber>=9) && (hourNumber <=18));</p>
+            <p>};</p>
+            <br>
+            <p>function getDayNumber(janFirstDayNumber, yearDayNumber){</p>
+            <p> &nbsp;&nbsp; return ((yearDayNumber+janFirstDayNumber)%7)-1;</p>
+            <p>}</p>;
+            <br>
+            <p>function businessHoursInYear(yearDayNumber, hourNumber){</p>    
+            <p> &nbsp;&nbsp; let day=getDayNumber(0,yearDayNumber); //0 'cause 2023 started on Sunday</p>
+            <p>return businessHours(day, hourNumber);</p>
+            <p>}</p>
+    </div>
+    
+    <br>
+    
+    <h3><a class="back" href="../../index.html">Home</a></h3>
+    <br>
+    <h3><a class="back" href="../exercise1/page1.html">Exercise 1</a></h3>
+    <br>
+    <h3><a class="back" href="../exercise3/page3.html">Exercise 3</a></h3>
+    <!-- enlazar el archivo main de js con el atributo defer para que se ejecute de manera diferida -->
+    <script src="./exercise3.js" defer></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

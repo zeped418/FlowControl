@@ -1,0 +1,46 @@
+
+* {
+    font-size: 62.5%;
+    padding: 1rem;
+    margin: 1rem;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+p,
+strong,
+var {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: blue;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(3, 155, 31);
+    font-weight: bold;
+}
+
+.back{
+    background-color: rgb(181, 181, 240);
+    width: 7rem;
+    font-weight: bold ;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.container p {
+    color: rgb(12, 12, 162);
+}
+
+.container{
+    border: 0.1rem rgb(128, 75, 252) solid;
+    padding: auto;
+    margin: auto;
+}
+
+ul li a, ul li{
+    font-size: 1.8rem;
+}
